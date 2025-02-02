@@ -1,0 +1,151 @@
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 175px;
+    width: 175px;
+}
+header .menu a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 30px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .menu a:not(:last-child) {
+    margin-right: 2px;
+}
+
+header .menu a:hover {
+    background: #f5f5f5;
+}
+
+label {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+    display: none;
+    width: 40%;
+}
+
+@media (max-width: 960px) {
+    header .menu {
+        display: none;
+    }
+
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+
+    label:hover {
+        color: #fff;
+    }
+
+    label .close-btn {
+        display: none;
+    }
+
+    #check:checked ~ header .menu {
+        z-index: 2;
+        position: fixed;
+        background: rgba(229, 246, 223, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+    #check:checked ~ header .menu a {
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 10px;
+    }
+
+    #check:checked ~ header label .menu-btn {
+        display: none;
+    }
+
+    #check:checked ~ header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .menu-btn {
+        position: absolute;
+    }
+
+    header .logo {
+        position: absolute;
+    }
+}
+.se{
+    height: 25px;
+    width: 25px;
+    padding-left: 100px;
+
+}
+.s{
+    width: 500px;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+.left {
+    width: 30%;
+    display: block;
+    align-items: right; /* Center vertically */
+    justify-content: left; /* Center horizontally */
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.left {
+    background-color: beige;
+    width: 300px
+    
+}
+.right {
+    background-color: white;
+    width: 1000px
+}
+body{
+    background-image: url("./images/group\ of\ students\ facing\ each\ other\ in\ a\ nest\ discussing\ physics\,\ maths\ \,chemistry\ 02-02-2025\ at\ 09-18-33.jpeg");
+   
+}
+.right{
+    font-style: oblique;
+    font-size: large;
+    margin-top: 5%;
+    margin-left: 5%;
+align-items: center;
+   
+
+}

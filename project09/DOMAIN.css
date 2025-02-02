@@ -1,0 +1,21 @@
+.left{ width: 30%;
+    display: block;
+    align-items: right; /* Center vertically */
+    justify-content: left; /* Center horizontally */
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 5px;
+
+}
+#phy{
+    width:1000px;
+    color: black;
+}
+#che{
+    width: 1000px;
+    color: black;
+}
+    
+
+
